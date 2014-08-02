@@ -22,4 +22,3 @@ module ShortUrl
   end
 end
 $redis = Redis.new
-$filter = BloomFilter::Redis.new(size: 1000000, namespace: 'short_url_filter')
